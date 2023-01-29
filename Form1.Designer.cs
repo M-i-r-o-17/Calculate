@@ -72,12 +72,15 @@
             // textResult
             // 
             this.textResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textResult.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textResult.Location = new System.Drawing.Point(0, 0);
             this.textResult.Multiline = true;
             this.textResult.Name = "textResult";
             this.textResult.ReadOnly = true;
             this.textResult.Size = new System.Drawing.Size(354, 100);
             this.textResult.TabIndex = 0;
+            this.textResult.Text = "0";
+            this.textResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panelGridButton
             // 
@@ -119,7 +122,7 @@
             this.kpAnswer.TabIndex = 23;
             this.kpAnswer.Text = "=";
             this.kpAnswer.UseVisualStyleBackColor = true;
-            this.kpAnswer.Click += new System.EventHandler(this.kpAnswer_Click);
+            this.kpAnswer.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpDot
             // 
@@ -129,7 +132,7 @@
             this.kpDot.TabIndex = 22;
             this.kpDot.Text = ".";
             this.kpDot.UseVisualStyleBackColor = true;
-            this.kpDot.Click += new System.EventHandler(this.kpInteracte);
+            this.kpDot.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp0
             // 
@@ -139,7 +142,7 @@
             this.kp0.TabIndex = 21;
             this.kp0.Text = "0";
             this.kp0.UseVisualStyleBackColor = true;
-            this.kp0.Click += new System.EventHandler(this.kpInteracte);
+            this.kp0.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpChange
             // 
@@ -156,9 +159,9 @@
             this.kpPlus.Name = "kpPlus";
             this.kpPlus.Size = new System.Drawing.Size(85, 85);
             this.kpPlus.TabIndex = 19;
-            this.kpPlus.Text = " + ";
+            this.kpPlus.Text = "+";
             this.kpPlus.UseVisualStyleBackColor = true;
-            this.kpPlus.Click += new System.EventHandler(this.kpInteracte);
+            this.kpPlus.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp3
             // 
@@ -168,7 +171,7 @@
             this.kp3.TabIndex = 18;
             this.kp3.Text = "3";
             this.kp3.UseVisualStyleBackColor = true;
-            this.kp3.Click += new System.EventHandler(this.kpInteracte);
+            this.kp3.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp2
             // 
@@ -178,7 +181,7 @@
             this.kp2.TabIndex = 17;
             this.kp2.Text = "2";
             this.kp2.UseVisualStyleBackColor = true;
-            this.kp2.Click += new System.EventHandler(this.kpInteracte);
+            this.kp2.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp1
             // 
@@ -188,7 +191,7 @@
             this.kp1.TabIndex = 16;
             this.kp1.Text = "1";
             this.kp1.UseVisualStyleBackColor = true;
-            this.kp1.Click += new System.EventHandler(this.kpInteracte);
+            this.kp1.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpMinus
             // 
@@ -196,9 +199,9 @@
             this.kpMinus.Name = "kpMinus";
             this.kpMinus.Size = new System.Drawing.Size(85, 85);
             this.kpMinus.TabIndex = 15;
-            this.kpMinus.Text = " - ";
+            this.kpMinus.Text = "-";
             this.kpMinus.UseVisualStyleBackColor = true;
-            this.kpMinus.Click += new System.EventHandler(this.kpInteracte);
+            this.kpMinus.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp6
             // 
@@ -208,7 +211,7 @@
             this.kp6.TabIndex = 14;
             this.kp6.Text = "6";
             this.kp6.UseVisualStyleBackColor = true;
-            this.kp6.Click += new System.EventHandler(this.kpInteracte);
+            this.kp6.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp5
             // 
@@ -218,7 +221,7 @@
             this.kp5.TabIndex = 13;
             this.kp5.Text = "5";
             this.kp5.UseVisualStyleBackColor = true;
-            this.kp5.Click += new System.EventHandler(this.kpInteracte);
+            this.kp5.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp4
             // 
@@ -228,7 +231,7 @@
             this.kp4.TabIndex = 12;
             this.kp4.Text = "4";
             this.kp4.UseVisualStyleBackColor = true;
-            this.kp4.Click += new System.EventHandler(this.kpInteracte);
+            this.kp4.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpMultiply
             // 
@@ -236,9 +239,9 @@
             this.kpMultiply.Name = "kpMultiply";
             this.kpMultiply.Size = new System.Drawing.Size(85, 85);
             this.kpMultiply.TabIndex = 11;
-            this.kpMultiply.Text = " * ";
+            this.kpMultiply.Text = "*";
             this.kpMultiply.UseVisualStyleBackColor = true;
-            this.kpMultiply.Click += new System.EventHandler(this.kpInteracte);
+            this.kpMultiply.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp9
             // 
@@ -248,7 +251,7 @@
             this.kp9.TabIndex = 10;
             this.kp9.Text = "9";
             this.kp9.UseVisualStyleBackColor = true;
-            this.kp9.Click += new System.EventHandler(this.kpInteracte);
+            this.kp9.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp8
             // 
@@ -258,7 +261,7 @@
             this.kp8.TabIndex = 9;
             this.kp8.Text = "8";
             this.kp8.UseVisualStyleBackColor = true;
-            this.kp8.Click += new System.EventHandler(this.kpInteracte);
+            this.kp8.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kp7
             // 
@@ -268,7 +271,7 @@
             this.kp7.TabIndex = 8;
             this.kp7.Text = "7";
             this.kp7.UseVisualStyleBackColor = true;
-            this.kp7.Click += new System.EventHandler(this.kpInteracte);
+            this.kp7.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpDivide
             // 
@@ -276,9 +279,9 @@
             this.kpDivide.Name = "kpDivide";
             this.kpDivide.Size = new System.Drawing.Size(85, 85);
             this.kpDivide.TabIndex = 7;
-            this.kpDivide.Text = " / ";
+            this.kpDivide.Text = "/";
             this.kpDivide.UseVisualStyleBackColor = true;
-            this.kpDivide.Click += new System.EventHandler(this.kpInteracte);
+            this.kpDivide.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // kpTg
             // 
@@ -288,7 +291,6 @@
             this.kpTg.TabIndex = 6;
             this.kpTg.Text = "tg(x)";
             this.kpTg.UseVisualStyleBackColor = true;
-            this.kpTg.Click += new System.EventHandler(this.kpInteracteTrig);
             // 
             // kpCos
             // 
@@ -298,7 +300,6 @@
             this.kpCos.TabIndex = 5;
             this.kpCos.Text = "cos(x)";
             this.kpCos.UseVisualStyleBackColor = true;
-            this.kpCos.Click += new System.EventHandler(this.kpInteracteTrig);
             // 
             // kpSin
             // 
@@ -308,7 +309,6 @@
             this.kpSin.TabIndex = 4;
             this.kpSin.Text = "sin(x)";
             this.kpSin.UseVisualStyleBackColor = true;
-            this.kpSin.Click += new System.EventHandler(this.kpInteracteTrig);
             // 
             // kpBackSpace
             // 
@@ -348,7 +348,7 @@
             this.kpProcent.TabIndex = 0;
             this.kpProcent.Text = "%";
             this.kpProcent.UseVisualStyleBackColor = true;
-            this.kpProcent.Click += new System.EventHandler(this.kpInteracte);
+            this.kpProcent.Click += new System.EventHandler(this.buttonBaseClick);
             // 
             // Form1
             // 
